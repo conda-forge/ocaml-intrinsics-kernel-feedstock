@@ -4,7 +4,7 @@ context:
   name: intrinsics-kernel
   opam_name: ocaml_intrinsics_kernel
   version: "0.17.2"
-  build_number: 0
+  build_number: 1
 
   library: ${{ "Library/" if not unix else "" }}
   m2: ${{ "m2-" if not unix else "" }}
