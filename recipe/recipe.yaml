@@ -3,8 +3,8 @@ schema_version: 1
 context:
   name: intrinsics-kernel
   opam_name: ocaml_intrinsics_kernel
-  version: "0.17.2"
-  build_number: 1
+  version: "0.17.3"
+  build_number: 0
 
   # ocaml_win-64 ships gcc_* and vs_* at the same version/build; name the track.
   c_toolchain: ${{ "" if unix else c_compiler ~ "_*" }}
@@ -20,7 +20,7 @@ package:
 
 source:
   url: https://github.com/janestreet/ocaml_intrinsics_kernel/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: a91df2e5038b7d5cc8cccbc2b3fd21fcc5acfffcf4e67792ccb4198c32d18562
+  sha256: 2a967316c51b0f3fec37f42f43b362d87d9ae536ce98e0e921a65c8bbc83cd85
 
 build:
   number: ${{ build_number }}
